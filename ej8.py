@@ -8,3 +8,4 @@ def C(total, grupo):
 if __name__ == '__main__':
     print(C(5,3))
     print(C(9,4))
+    print(C(15,6))
