@@ -1,4 +1,4 @@
-from ej1 import ndigits
+from recursividad.ej1 import ndigits
 def invertir_rec(num): #asumo num entero positivo porque un lio
 
     n = ndigits(num)
