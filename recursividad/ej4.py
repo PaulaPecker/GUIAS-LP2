@@ -1,5 +1,5 @@
 def es_palindromo(word) ->bool:
-    cont=0
+    word = word.lower()
     if len(word)<=1:
         return True #porque no me molesta
     else:
@@ -8,3 +8,5 @@ def es_palindromo(word) ->bool:
 if __name__ == '__main__':
     print(es_palindromo("neuquen"))
     print(es_palindromo("hola"))
+    print(es_palindromo("somos o no somos"))
+    print(es_palindromo("SOMOS o no somos"))
