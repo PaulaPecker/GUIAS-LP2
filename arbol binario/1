@@ -1,0 +1,33 @@
+FORMA 1 QUE ES UN LIO PORQUE OCUPO MUCHA MEMORIA (límites a chequear)
+def armarArbol(pre, in):-> binarytree
+    int p, i //recorro el pre y el in
+    p=i=0
+    encontre_raiz=FALSE
+    while(p<=pre.size() AND  NOT encontre_raiz):
+        i=0
+       while (i<= in.size() AND NOT encontre_raiz):
+        if pre[p]==in[i]:
+            encontre_raiz=TRUE
+        i++
+
+       p++
+    p--//porque cuando la encontré igual sumé uno entonces ahora se lo saco
+    i--
+    if NOT encontre_raiz:
+        return NULL //el in tiene tamaño nulo o sea ya no tengo el arbol que siga para este lado
+    else:
+        return binarytree.Node(pre[p], armarArbol(pre[1:i],in[:i]),armarArbol(pre[i+1:],in[i:]))
+
+
+def postorden(pre, in):->array
+    arbol=armarArbol(pre, in)
+    print leerPost(arbol)
+
+def leerPost(arbol):->array
+    if arbol.left==NULL AND arbol.right==NULL
+        return value //hoja
+    elif arbol==NULL // vacio (el nodo anterior no tenía este hijo)
+        return ""
+    else
+        return leerPost(arbol.left) + leerPost(arbol.right) + value //asumo que se unen asi porque me dijo saul
+
