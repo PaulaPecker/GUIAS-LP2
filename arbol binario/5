@@ -1,0 +1,5 @@
+def n_nodos(arbol):->int
+    if arbol==NULL:
+        return 0
+    else:
+        return 1+n_nodos(arbol.left)+n_nodos(arbol.right)

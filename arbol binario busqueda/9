@@ -1,0 +1,18 @@
+def armar_ABB(arr):-> binarytree
+    arr=ordenar(arr)
+    ABB=subarmar_ABB(arr)
+    return ABB
+
+def subarmar_ABB(arr):->binarytree
+    if arr.size()==0:
+        return NULL
+    else:
+         mitad=floor(arr.size()/2)#si es impar agarro el mas chico
+         return binarytree.Node(arr[mitad], subarmar(arr[:mitad] , subarmar[mitad+1:])#le doy como valor el valor medio del array
+                                                                         y como subarboles paso to-do el array menor al
+                                                                         izquierdo y to-do el array mayor al derecho
+
+def ordenar(arr):->array  #como n es menor a 20, hacer quick sort es un mambo al pedo --> hago por seleccion: agarro el mas chico,
+                                                                                          lo pongo a la izq y ordeno de la posicion 1 en adelante (rec)
+
+

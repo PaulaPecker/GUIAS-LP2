@@ -1,0 +1,8 @@
+def maximoValor_it(ABB):->int
+    int i=0
+    aux=ABB  #guardo la raiz
+    while i< altura(ABB) AND aux.right!=NULL: #si tiene un hijo derecho entonces ese hijo va a ser mayor que el nodo,
+                                                si no tiene hijo derecho entonces es el mas a la derecha (mayor) abrazo
+        aux=aux.right
+        i=i+1
+    return aux.value

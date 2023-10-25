@@ -1,0 +1,10 @@
+def mostrarNivel_rec(ABB, nivel):
+   if nivel==0:  #estoy en el nivel que pide --> te lo muestro
+       print (ABB.value)
+       return
+   elif ABB==NULL:  #el nodo anterior no tenia este hijo --> no tengo nada para mostrarte porque por ese camino ya termino el arbol
+        return
+   else:   #busco un nivel menos en cada subarbol
+        mostrarNivel_rec(ABB.right,nivel-1)
+        mostrarNivel_rec(ABB.left, nivel-1)
+

@@ -1,0 +1,5 @@
+def altura(arbol):->int
+    if arbol==NULL:
+           return -1 o 0 //depende si cuento el palito o no CHEQUEAR!!!!
+    else:
+        return 1+max(altura(arbol.left),altura(arbol.right))

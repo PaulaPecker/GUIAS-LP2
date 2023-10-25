@@ -1,0 +1,10 @@
+def borrarHojas(ABB):->ABB
+    if esHoja(ABB):
+        return NULL
+    else
+        ABB.left=borrarHojas(ABB.left)
+        ABB.right=borrarHojas(ABB.right)
+        return ABB
+
+def esHoja(ABB):->bool
+    return ABB.left==NULL and ABB.right==NULL

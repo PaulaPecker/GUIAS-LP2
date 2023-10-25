@@ -1,0 +1,5 @@
+def minivoValor_rec(ABB):->int
+    if ABB.left==NULL: #si no tiene hijo izq es porque es el mas a la izq (menor)
+        return ABB.value
+    else:
+        return minimoValor_rec(ABB.left) #voy buscando el mas izq del subarbol izq
