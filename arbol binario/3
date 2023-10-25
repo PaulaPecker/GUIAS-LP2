@@ -1,0 +1,12 @@
+inorder (arbol)
+while(pila!vacio o puedo ir right):
+    si puedo ir left y !flag://ir left = hijo izq
+        empilo nodo
+    sino:
+        desempilo y guardo
+        si puedo ir right:
+            empilo
+            flag=false
+        sino:
+            desempilo y guardo
+            flag=true
